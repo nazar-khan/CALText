@@ -27,7 +27,7 @@ Tensorflow v1.6
 
 # Usage 
 
-Upload data files into your Colab account, create pickle files (train, valid, and test images and labels) from the dataset. You can place the pickle dataset files at any folder of your preference but change the path settings in the code where this data is bbeing loaded.
+Upload data files into your Colab account, create pickle files (train, valid, and test images and labels) from the dataset. You can place the pickle dataset files at any folder of your preference but change the path settings in the code where this data is being loaded.
 
 Run "makepickle.ipynb" to create pickle files for train and test data. Further distribute the train pickle file into train and valid pickle files by using last 907 images and labels of train as valid.
 
@@ -70,7 +70,9 @@ drive.mount("/gdrive", force_remount=True)
 
 # References
 
-http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
+PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
+
+Previous Work:
 
 http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/index.html
 
