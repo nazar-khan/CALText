@@ -1,20 +1,12 @@
 # CALText
-<pre>
-This repository contains the source code for CALText model introduced in
-"CALText: Contextual Attention Localization for Offline Handwritten Text"
-https://arxiv.org/abs/2111.03952
-</pre>
+This repository contains the source code for CALText model introduced in "CALText: Contextual Attention Localization for Offline Handwritten Text" https://arxiv.org/abs/2111.03952
 
 ![image](https://user-images.githubusercontent.com/46027794/139389185-14b0c864-b740-4063-b350-b30798a6a4ba.png) ![image](https://user-images.githubusercontent.com/46027794/139389407-7e8fb63e-6259-49fa-8cbc-7cfb2de6b969.png)
 
-<pre>
-Dataset used to train and test the model can be found at:
-http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
+Dataset used to train and test the model can be found at http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
 
-The code in this model was based on the work of:
-https://github.com/JianshuZhang/WAP
-https://github.com/wwjwhen/Watch-Attend-and-Parse-tensorflow-version.
-</pre>
+The code in this model was based on the work of https://github.com/JianshuZhang/WAP and https://github.com/wwjwhen/Watch-Attend-and-Parse-tensorflow-version.
+
 
 # Requirements
 <pre>
@@ -82,11 +74,11 @@ PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.
 }
 </pre>
 
-<pre>
 Previous Work:
+
 http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/index.html
+
 http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/ICFHR2020_manuscript.pdf
-</pre>
 
 
 
