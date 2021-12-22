@@ -68,9 +68,8 @@ Change runtime to GPU or TPU for better performance.
 
 Add these lines in notebook for accessing data from Google Drive: 
 
-from google.colab import drive
-
-drive.mount("/gdrive", force_remount=True)
+`from google.colab import drive`
+`drive.mount("/gdrive", force_remount=True)`
 
 
 # References
@@ -78,27 +77,17 @@ drive.mount("/gdrive", force_remount=True)
 PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
 
 @article{anjum_caltext_2021,
-
   author    = {Tayaba Anjum and Nazar Khan},
-
   title     = {{CALText}: Contextual Attention Localization for Offline Handwritten Text},
-
   journal   = {CoRR},
-
   volume    = {abs/2111.03952},
-
   year      = {2021},
-
   url       = {https://arxiv.org/abs/2111.03952},
-
   eprinttype = {arXiv},
-
   eprint    = {2111.03952},
-
 }
 
 @inproceedings{anjum2020urdu_ohtr,
-
     author = {Anjum, Tayaba and Khan, Nazar},
     title = {{An attention based method for offline handwritten Urdu text recognition}},
     booktitle = {International Conference on Frontiers in Handwriting Recognition (ICFHR)},
