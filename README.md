@@ -100,15 +100,10 @@ PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.
 @inproceedings{anjum2020urdu_ohtr,
 
     author = {Anjum, Tayaba and Khan, Nazar},
-
     title = {{An attention based method for offline handwritten Urdu text recognition}},
-
     booktitle = {International Conference on Frontiers in Handwriting Recognition (ICFHR)},
-
     month = {September},
-
     year = {2020},
-
 }
 
 Previous Work:
