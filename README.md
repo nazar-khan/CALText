@@ -33,8 +33,8 @@ To run the code locally, copy the code from the .ipynb notebooks into "makepickl
 - For training and testing, run "CALText.ipynb" notebook in Google Colab. For newer versions, make sure to run "%tensorflow_version 1.x" command in the first cell of "CALText.ipynb".
 - Change runtime to GPU or TPU for better performance.
 - Add the following lines to the notebook for accessing data from Google Drive:
- - `from google.colab import drive`
- - `drive.mount("/gdrive", force_remount=True)`
+ 1. `from google.colab import drive`
+ 2. `drive.mount("/gdrive", force_remount=True)`
 
 # References
 PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
