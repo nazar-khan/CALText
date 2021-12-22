@@ -25,19 +25,26 @@ Python 3
 Tensorflow v1.6
 
 
-# Usage 
+# How to train on your own dataset
 
-Upload data files into your Colab account, create pickle files (train, valid, and test images and labels) from the dataset. You can place the pickle dataset files at any folder of your preference but change the path settings in the code where this data is being loaded.
+Place all training line images in the folder "train_lines"
 
-Run "makepickle.ipynb" to create pickle files for train and test data. Further distribute the train pickle file into train and valid pickle files by using last 907 images and labels of train as valid.
+Place all testing line images in the folder "test_lines"
 
-For training, set mode="train", and run "CALText.ipynb".
+Place all training ground-truth labels in the file "train_labels.xlsx"
 
-For testing, set mode="test", and run "CALText.ipynb".
+Place all testing ground-truth labels in the file "test_labels.xlsx"
+
+Run "makepickle.ipynb" after specifying validation indices (if required). This will place all training, testing and validation images and labels in pickle format in the 'data/' folder
+
+For training, set mode="train", and run "CALText.ipynb". This will place the trained model(s) in 'models/' folder.
+
+For testing, set mode="test", set path of the model to be used and run "CALText.ipynb".
 
 For Contextual Attention, set alpha_reg=0, while training and testing.
 
 For Contextual Attention Localization, set alpha_reg=1, while training and testing.
+
 
 
 # Running on Local Machine
@@ -66,52 +73,46 @@ from google.colab import drive
 drive.mount("/gdrive", force_remount=True)
 
 
-# How to train on your own dataset
-
-Place all training line images in the folder "train_lines"
-
-Place all testing line images in the folder "test_lines"
-
-Place all training ground-truth labels in the file "train_labels.xlsx"
-
-Place all testing ground-truth labels in the file "test_labels.xlsx"
-
-Run "makepickle.ipynb" after specifying validation indices (if required). This will place all training, testing and validation images and labels in pickle format in the 'data/' folder
-
-For training, set mode="train", and run "CALText.ipynb". This will place the trained model(s) in 'models/' folder.
-
-For testing, set mode="test", set path of the model to be used and run "CALText.ipynb".
-
-For Contextual Attention, set alpha_reg=0, while training and testing.
-
-For Contextual Attention Localization, set alpha_reg=1, while training and testing.
-
-
 # References
 
 PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
 
 @article{anjum_caltext_2021,
-  author    = {Tayaba Anjum and
-               Nazar Khan},
+
+  author    = {Tayaba Anjum and Nazar Khan},
+
   title     = {{CALText}: Contextual Attention Localization for Offline Handwritten Text},
+
   journal   = {CoRR},
+
   volume    = {abs/2111.03952},
+
   year      = {2021},
+
   url       = {https://arxiv.org/abs/2111.03952},
+
   eprinttype = {arXiv},
+
   eprint    = {2111.03952},
+
 }
 
 @inproceedings{anjum2020urdu_ohtr,
+
     author = {Anjum, Tayaba and Khan, Nazar},
+
     title = {{An attention based method for offline handwritten Urdu text recognition}},
+
     booktitle = {International Conference on Frontiers in Handwriting Recognition (ICFHR)},
+
     month = {September},
+
     year = {2020},
+
 }
 
 Previous Work:
+
 http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/index.html
 http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/ICFHR2020_manuscript.pdf
 
