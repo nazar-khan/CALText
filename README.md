@@ -1,6 +1,8 @@
 # CALText
-This repository contains the source code for CALText model introduced in "CALText: Contextual Attention Localization for Offline Handwritten Text" paper.
-The details of this model are presented in:  (Add paper link)
+This repository contains the source code for CALText model introduced in
+
+"CALText: Contextual Attention Localization for Offline Handwritten Text"
+https://arxiv.org/abs/2111.03952
 
 ![image](https://user-images.githubusercontent.com/46027794/139389185-14b0c864-b740-4063-b350-b30798a6a4ba.png) ![image](https://user-images.githubusercontent.com/46027794/139389407-7e8fb63e-6259-49fa-8cbc-7cfb2de6b969.png)
 
