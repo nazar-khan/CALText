@@ -5,48 +5,36 @@ This repository contains the source code for CALText model introduced in "CALTex
 
 Dataset used to train and test the model can be found at http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
 
-The code in this model was based on the work of https://github.com/JianshuZhang/WAP and https://github.com/wwjwhen/Watch-Attend-and-Parse-tensorflow-version.
+The code that this model was built on top of can be found [here](https://github.com/JianshuZhang/WAP) and [here](https://github.com/wwjwhen/Watch-Attend-and-Parse-tensorflow-version).
 
 
 # Requirements
-<pre>
-Python 3
-Tensorflow v1.6
-</pre>
-
+- Python 3
+- Tensorflow v1.6
 
 # How to train on your own dataset
-<pre>
-Place all training line images in the folder "train_lines"
-Place all testing line images in the folder "test_lines"
-Place all training ground-truth labels in the file "train_labels.xlsx"
-Place all testing ground-truth labels in the file "test_labels.xlsx"
-Run "makepickle.ipynb" after specifying validation indices (if required). This will place all training, testing and validation images and labels in pickle format in the 'data/' folder
-For training, set mode="train", and run "CALText.ipynb". This will place the trained model(s) in 'models/' folder.
-For testing, set mode="test", set path of the model to be used and run "CALText.ipynb".
-For Contextual Attention, set alpha_reg=0, while training and testing.
-For Contextual Attention Localization, set alpha_reg=1, while training and testing.
-</pre>
-
+1. Place all training line images in the folder "train_lines"
+2. Place all testing line images in the folder "test_lines"
+3. Place all training ground-truth labels in the file "train_labels.xlsx"
+4. Place all testing ground-truth labels in the file "test_labels.xlsx"
+5. Run "makepickle.ipynb" after specifying validation indices (if required). This will place all training, testing and validation images and labels in pickle format in the 'data/' folder
+6. For training, set mode="train", and run "CALText.ipynb". This will place the trained model(s) in 'models/' folder.
+7. For testing, set mode="test", set path of the model to be used and run "CALText.ipynb".
+8. For Contextual Attention, set alpha_reg=0, while training and testing.
+9. For Contextual Attention Localization, set alpha_reg=1, while training and testing.
 
 # Running on Local Machine
-<pre>
 To run the code locally, copy the code from the .ipynb notebooks into "makepickle.py" and "CALText.py". Use following commands to run the code files:
-python makepickle.py
-python CALText.py
-</pre>
-
+- python makepickle.py
+- python CALText.py
 
 # Running on Google Colab
-<pre>
-To convert dataset to pickle files, run "makepickle.ipynb" in Google Colab.
-For training and testing, run "CALText.ipynb" notebook in Google Colab.
-  For newer versions, make sure to run "%tensorflow_version 1.x" command in the first cell of "CALText.ipynb".
-Change runtime to GPU or TPU for better performance.
-Add the following lines to the notebook for accessing data from Google Drive:
-  from google.colab import drive
-  drive.mount("/gdrive", force_remount=True)
-</pre>
+- To convert dataset to pickle files, run "makepickle.ipynb" in Google Colab.
+- For training and testing, run "CALText.ipynb" notebook in Google Colab. For newer versions, make sure to run "%tensorflow_version 1.x" command in the first cell of "CALText.ipynb".
+- Change runtime to GPU or TPU for better performance.
+- Add the following lines to the notebook for accessing data from Google Drive:
+ - `from google.colab import drive`
+ - `drive.mount("/gdrive", force_remount=True)`
 
 # References
 PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/pucit_ohul_dataset.html
@@ -75,10 +63,8 @@ PUCIT Offline Handwritten Urdu Lines (PUCIT-OHUL) Dataset: http://faculty.pucit.
 </pre>
 
 Previous Work:
-
-http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/index.html
-
-http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/ICFHR2020_manuscript.pdf
+- http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/index.html
+- http://faculty.pucit.edu.pk/nazarkhan/work/urdu_ohtr/ICFHR2020_manuscript.pdf
 
 
 
