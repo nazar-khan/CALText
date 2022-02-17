@@ -12,6 +12,7 @@ Built on top of the [tensorflow version](https://github.com/wwjwhen/Watch-Attend
 - Tensorflow v1.6
 
 # Directory structure
+<pre>
 datasets/
   -- PUCIT_OHUL
     -- train_lines/
@@ -57,6 +58,7 @@ chekpoints/
   -- cp-NUM-ACCURACY.ckpt  <== checkpoint files
 models/
   -- current_best_model.ckpt  <== checkpoint file for currently best performing model on validation set
+</pre>
 
 # How to train on your own dataset
 ** Steps 1-5 can be replaced by your own custom methods. The goal is to populate the 'data/' folder with 6 pickle files corresponding to images and ground-truths of training, validation and test sets. **
